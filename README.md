@@ -13,6 +13,6 @@
 
 ## Документация
 
-- [План тестирования](https://github.com/VisYar/ProjectQAv2/blob/master/Plan.md)
+- [План тестирования](https://github.com/VisYar/ProjectQA39v2/blob/master/Plan.md)
 - [Чек-лист](https://docs.google.com/spreadsheets/d/1n8drndLZfLUC6JWZItOuXtQUB-e9XyBoIkpHJEDPSeQ/edit?usp=sharing)
 - [Тест-кейсы](https://docs.google.com/spreadsheets/d/16TlvZ9rxXIExzIDt-xk3M38z6HTEGuZlMSVt3jiFWSo/edit?usp=sharing)
