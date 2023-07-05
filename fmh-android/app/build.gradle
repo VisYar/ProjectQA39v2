@@ -8,6 +8,11 @@ plugins {
     id 'androidx.navigation.safeargs.kotlin'
     id 'com.google.firebase.crashlytics'
 }
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
 android {
     compileSdkVersion 32
     buildToolsVersion "30.0.3"
@@ -106,11 +111,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     androidTestImplementation 'androidx.test:runner:1.4.0'
     androidTestImplementation 'androidx.test:rules:1.4.0'
-    implementation 'com.github.blocoio:faker:1.2.9'
-    testImplementation 'com.github.blocoio:faker:1.2.9'
-    androidTestImplementation 'com.github.blocoio:faker:1.2.9'
     androidTestImplementation "io.qameta.allure:allure-kotlin-model:$allure_version"
     androidTestImplementation "io.qameta.allure:allure-kotlin-commons:$allure_version"
     androidTestImplementation "io.qameta.allure:allure-kotlin-junit4:$allure_version"
     androidTestImplementation "io.qameta.allure:allure-kotlin-android:$allure_version"
+
+    implementation 'com.github.blocoio:faker:1.2.9'
+    testImplementation 'com.github.blocoio:faker:1.2.9'
+    androidTestImplementation 'com.github.blocoio:faker:1.2.9'
 }
