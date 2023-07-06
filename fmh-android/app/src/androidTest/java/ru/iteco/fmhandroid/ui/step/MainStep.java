@@ -31,7 +31,7 @@ public class MainStep {
     }
 
     public void checkMainElements() {
-        Allure.step(" news //  в элементах майн Элементы экрана Main");
+        Allure.step("Элементы экрана Main");
         trademark.check(matches(isDisplayed()));
         newsText.check(matches(isDisplayed()));
         newsList.check(matches(isDisplayed()));

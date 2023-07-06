@@ -58,7 +58,7 @@ public class NewsTest {
         splashStep.appDownload();
         try {
             mainStep.mainScreenLoad();
-        } catch (NoMatchingViewException e) {
+        } catch (Exception e) {
             authStep.authWithValidLoginAndPass(Helper.authInfo());
             authStep.clickSignInButton();
         } finally {

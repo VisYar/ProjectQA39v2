@@ -6,6 +6,7 @@ import static androidx.test.espresso.action.ViewActions.swipeUp;
 import static org.junit.Assert.assertEquals;
 
 import androidx.test.espresso.NoMatchingViewException;
+import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
 
 import org.junit.Before;
@@ -30,6 +31,7 @@ import ru.iteco.fmhandroid.ui.step.EditClaimStep;
 import ru.iteco.fmhandroid.ui.step.MainStep;
 import ru.iteco.fmhandroid.ui.step.SplashStep;
 
+@LargeTest
 @RunWith(AllureAndroidJUnit4.class)
 public class ClaimsTest {
 
@@ -55,7 +57,7 @@ public class ClaimsTest {
         splashStep.appDownload();
         try {
             mainStep.mainScreenLoad();
-        } catch (NoMatchingViewException e) {
+        } catch (Exception e) {
             authStep.authWithValidLoginAndPass(Helper.authInfo());
             authStep.clickSignInButton();
         } finally {

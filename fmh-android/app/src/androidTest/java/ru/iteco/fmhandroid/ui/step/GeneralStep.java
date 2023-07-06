@@ -124,4 +124,3 @@ public class GeneralStep {
         EnterValidTimeNext.check(matches(isDisplayed()));
     }
 }
-
